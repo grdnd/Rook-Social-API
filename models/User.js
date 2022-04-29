@@ -1,4 +1,4 @@
-// Require Mongoose Model Schema
+// require mongoose model schema
 const { Schema, model } = require('mongoose');
 
 // create user schema
