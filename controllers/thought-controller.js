@@ -1,3 +1,4 @@
+// require model schemas
 const { Thought, User } = require('../models');
 
 const thoughtController = {
@@ -80,7 +81,7 @@ const thoughtController = {
       })
       .then((user) => {
         if (!user) {
-          return res.status(404).json({ message: 'Thought created, but user id' });
+          return res.status(404).json({ message: 'Thought has been deleted from User' });
         }
         res.json({ message: 'Thought successfully deleted!' });
       })
