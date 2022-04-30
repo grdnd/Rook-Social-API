@@ -8,6 +8,9 @@ const express = require('express');
 // require database connection
 const db = require('./config/connection');
 
+// require routes
+const routes = require('./routes');
+
 // create port
 const PORT = process.env.PORT;
 
