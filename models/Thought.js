@@ -10,11 +10,11 @@ const thoughtSchema = new Schema(
       type: String,
       required: 'Must leave a thought!',
       minlength: 1,
-      maxlength: 150
+      maxlength: 280
     },
     createdOn: {
       type: Date,
-      default: Date.now,
+      default: Date.now
     },
     username: {
       type: String,
@@ -30,7 +30,9 @@ const thoughtSchema = new Schema(
   }
 );
 
-thoughtSchema.virtual('reactions: ').get(function () {
+thoughtSchema
+.virtual('reactionCount')
+.get(function () {
   return this.reactions.length;
 });
 
