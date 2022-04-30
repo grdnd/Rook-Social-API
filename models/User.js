@@ -2,7 +2,7 @@
 const { Schema, model } = require('mongoose');
 
 // create user schema
-const userSchema = new userSchema(
+const userSchema = new Schema(
   {
     // username
     username: {
@@ -29,7 +29,7 @@ const userSchema = new userSchema(
     friends: [
       {
         type: Schema.Types.ObjectId,
-        ref: 'Thought',
+        ref: 'User',
       },
     ],
   },
@@ -41,7 +41,9 @@ const userSchema = new userSchema(
   }
 );
 
-userSchema.virtual('yourFriends').get(function () {
+userSchema
+.virtual('yourFriends')
+.get(function () {
   return this.friends.length;
 });
 
