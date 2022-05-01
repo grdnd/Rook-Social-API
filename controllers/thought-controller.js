@@ -81,7 +81,7 @@ const thoughtController = {
       })
       .then((user) => {
         if (!user) {
-          return res.status(404).json({ message: 'Thought has been deleted from User' });
+          return res.status(404).json({ message: 'Thought has been deleted but no User was found' });
         }
         res.json({ message: 'Thought successfully deleted!' });
       })
