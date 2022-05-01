@@ -1,13 +1,13 @@
 {
   "name": "rook-social-api",
   "version": "1.0.0",
-  "description": "## Your Task",
+  "description": "Rook-Social-API is an app that uses express and mongoose, in order to create a simple social network api that allows you to create, read, update, and delete: Users, Friends, Thoughts, and Reactions",
   "main": "server.js",
   "scripts": {
     "devStart": "nodemon server.js"
   },
   "author": "Gordon Do",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "github.com/grdnd/Rook-Social-API"
