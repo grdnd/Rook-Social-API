@@ -21,8 +21,8 @@ const userController = {
     .populate('friends')
     .populate('thoughts')
     .then((user) => {
-      if (user == null) {
-        return res.status(404).json({ 'User id was not found' });
+      if (!user) {
+        return res.status(404).json({ message: 'User id was not found' });
       }
       res.json(user);
     })
@@ -76,7 +76,7 @@ const userController = {
       return Thought.deleteMany({ _id: { $in: user.thoughts } });
     })
     .then(() => {
-      res.json({ message: 'Users have been deleted, along with their minds'})
+      res.json({ message: 'User has been deleted, along with their minds'})
     })
     .catch((err) => {
       res.status(500).json(err);
