@@ -17,7 +17,6 @@ More specifically:
 
     npm i express mongoose nodemon dotenv
 
-
 ## Usage
 
 Once we have our dependencies successfully installed, we can now start the server.
@@ -26,12 +25,11 @@ Running any of the following commands will have our server listening to port:
 
     npm start / npx nodemon / node server.js
 
-
-### Contributions 
+### Contributions
 
 If you would like to make a contribution, you may follow my Rook-Social-API repository at:
 
-:file_folder:: [/Rook-Social-API](github.com/grdnd/Rook-Social-API)
+:file_folder:: [/Rook-Social-API](https://github.com/grdnd/Rook-Social-API)
 
 ### Tests
 
@@ -41,7 +39,7 @@ Tests will be provided at a later date
 
 If you have any questions feel free to contact me at:
 
-:octocat:: [github.com/grdnd](https://github.com/grdnd)
+:octocat:: [grdnd@github](https://github.com/grdnd)
 
 :envelope:: [gordfolio@gmail.com](mailto:gordfolio@gmail.com)
 
