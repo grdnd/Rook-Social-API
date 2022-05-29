@@ -19,6 +19,10 @@ More specifically:
 
 ## Usage
 
+![rook-social-api](https://user-images.githubusercontent.com/93315369/170851596-ae2bcc85-ffe1-4d0b-ac80-1d849727070f.jpg)
+
+[View the Demo Video Here!](https://youtu.be/aXcmeJ41YKw)
+
 Once we have our dependencies successfully installed, we can now start the server.
 
 Running any of the following commands will have our server listening to port:
